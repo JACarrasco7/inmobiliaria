@@ -1,0 +1,7 @@
+RewriteEngine On 
+
+RewriteRule ^(.*)=(.*)=(.*)$ index.php?contenido=$1&id=$2&id_categoria=$3 [L]
+
+RewriteRule ^(.*)=(.*)$ index.php?contenido=$1&id=$2 [L]
+
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1 [L]
